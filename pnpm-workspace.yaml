@@ -1,0 +1,14 @@
+packages:
+  - artifacts/api-server
+  - lib/db
+  - lib/api-zod
+
+catalog:
+  '@types/node': ^22.0.0
+  drizzle-orm: ^0.45.1
+  zod: ^3.25.76
+
+autoInstallPeers: false
+
+onlyBuiltDependencies:
+  - esbuild

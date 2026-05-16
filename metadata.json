@@ -1,0 +1,6 @@
+{
+  "name": "F2LFixxx Telegram Bot DB",
+  "description": "Telegram MTProto and Bot server with Drizzle database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx pnpm --filter @workspace/api-server run dev",
+    "install:all": "npx pnpm install --no-frozen-lockfile",
+    "db:push": "npx pnpm --filter @workspace/db run push-force",
+    "build": "npx pnpm -r --if-present run build",
+    "start": "npx pnpm --filter @workspace/api-server run start",
+    "setup": "npx pnpm run install:all && npx pnpm run db:push && npx pnpm run build"
+  },
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "dependencies": {
+    "express-rate-limit": "^8.5.2"
+  }
+}
